@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background-color: rgba(10, 10, 10, 5.8);
+    border-radius: 50%;
+}
+
+.choice:active {
+    transform: scale(0.95);
+    background-color: rgba(10, 20, 10, 2.8);
+    border-radius: 50%;
+}
+
+img {
+    height: 170px;
+    width: 160px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1.5));
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.choice:hover img {
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.8));
+    transform: rotate(8deg);
+}
+
+.choice:active img {
+    filter: drop-shadow(0 0 5px rgba(115, 32, 32, 0.798));
+}
+
+
+.score-board{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.com, .user{
+    font-size: 4rem;
+}
+
+.msg-box{
+    margin-top: 100px;
+}
+
+.msg{
+    background-color: #333;
+    color: white;
+    display: inline;
+    height: 30px;
+    font-size: 1.8rem;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
