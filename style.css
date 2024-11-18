@@ -42,7 +42,7 @@ body {
 
 .choice:active {
     transform: scale(0.95);
-    background-color: rgba(0, 100, 190, 5.8);
+    background-color: #F5EE9E;
     border-radius: 50%;
 }
 
