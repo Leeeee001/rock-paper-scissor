@@ -37,13 +37,12 @@ body {
 
 .choice:hover {
     transform: scale(1.1);
-    background-color: rgba(10, 10, 10, 5.8);
     border-radius: 50%;
 }
 
 .choice:active {
     transform: scale(0.95);
-    background-color: rgba(10, 20, 10, 2.8);
+    background-color: rgba(0, 100, 190, 5.8);
     border-radius: 50%;
 }
 
