@@ -6,7 +6,7 @@ const choices = document.querySelectorAll(".choice");
 let finalMsg = document.querySelector(".msg");
 
 let users = document.querySelector(".user");
-let comp = document.querySelector(".comp");
+let comp = document.querySelector(".com");
 
 
 
@@ -57,13 +57,16 @@ const playGame = (userChoice) =>{
 const showWinner = (userWin) => {
      if (userWin) {
         console.log("You win!");
-        // userScore++;
+        userScore++;
         finalMsg.innerText = `You Win!`;
         finalMsg.style.backGroundColor = "green";
+        users.innerText = userScore;
      }else {
         console.log("You lose!");
+        comScore++
         finalMsg.innerText = `You Lose!`;
         finalMsg.style.backGroundColor = "red";
+        comp.innerText = comScore;
     }
 
 }
