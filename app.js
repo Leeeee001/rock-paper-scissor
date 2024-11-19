@@ -59,13 +59,13 @@ const showWinner = (userWin) => {
         console.log("You win!");
         userScore++;
         finalMsg.innerText = `You Win!`;
-        finalMsg.style.backGroundColor = "green";
+        finalMsg.style.backgroundColor = "green";
         users.innerText = userScore;
      }else {
         console.log("You lose!");
         comScore++
         finalMsg.innerText = `You Lose!`;
-        finalMsg.style.backGroundColor = "red";
+        finalMsg.style.backgroundColor = "red";
         comp.innerText = comScore;
     }
 
