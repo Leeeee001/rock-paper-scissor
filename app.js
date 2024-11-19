@@ -48,23 +48,23 @@ const playGame = (userChoice) =>{
             // rock, paper
             userWin = comChoice === "rock" ? false : true;
         }
-        showWinner(userWin);
+        showWinner(userWin, userChoice, comChoice);
     }
 
 }
     
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, comChoice) => {
      if (userWin) {
         console.log("You win!");
         userScore++;
-        finalMsg.innerText = `You Win!`;
+        finalMsg.innerText = `You Win! Your ${userChoice} beats ${comChoice}`;
         finalMsg.style.backgroundColor = "green";
         users.innerText = userScore;
      }else {
         console.log("You lose!");
         comScore++
-        finalMsg.innerText = `You Lose!`;
+        finalMsg.innerText = `You Lose! Your ${userChoice} beats by ${comChoice}`;
         finalMsg.style.backgroundColor = "red";
         comp.innerText = comScore;
     }
